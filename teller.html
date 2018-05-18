@@ -1,10 +1,14 @@
 <html>
   <script>
-  setTimeout("document.location.reload()", 60000);
+setInterval(function() {
+    if (navigator.onLine) {
+        location.reload();
+    }
+}, 60 * 5 * 1000); /* 5 minutes */
   </script>
 <body style="background:black">
   <iframe
-  src="https://docs.google.com/presentation/d/e/2PACX-1vQ2bJxAGu6ATNSsVjrJluLapHtKf9DC7RBAal0COsRgsmQIIhoyl8eyA8EbxOyeGhda7qDfA36CfUv8/embed?start=true&loop=true&delayms=5000"
+  src="https://docs.google.com/presentation/d/e/2PACX-1vQ2bJxAGu6ATNSsVjrJluLapHtKf9DC7RBAal0COsRgsmQIIhoyl8eyA8EbxOyeGhda7qDfA36CfUv8/embed?start=true&loop=true&delayms=10000"
   frameborder="0" width="100%" height="100%" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </body>
 
